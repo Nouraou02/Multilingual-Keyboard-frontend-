@@ -1,0 +1,891 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4B0C35902FE02EC400495C8F /* MLXLLM in Frameworks */ = {isa = PBXBuildFile; productRef = 4B0C358F2FE02EC400495C8F /* MLXLLM */; };
+		4B0C35922FE02EC400495C8F /* MLXLMCommon in Frameworks */ = {isa = PBXBuildFile; productRef = 4B0C35912FE02EC400495C8F /* MLXLMCommon */; };
+		4B0C35942FE137AD00495C8F /* MLXHuggingFace in Frameworks */ = {isa = PBXBuildFile; productRef = 4B0C35932FE137AD00495C8F /* MLXHuggingFace */; };
+		4B71A6012FDFF7D800DD9EA5 /* MyKeybord.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 4B71A5FA2FDFF7D800DD9EA5 /* MyKeybord.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		4B71A6462FDFFDC900DD9EA5 /* MLX in Frameworks */ = {isa = PBXBuildFile; productRef = 4B71A6452FDFFDC900DD9EA5 /* MLX */; };
+		4B71A6482FDFFDC900DD9EA5 /* MLXNN in Frameworks */ = {isa = PBXBuildFile; productRef = 4B71A6472FDFFDC900DD9EA5 /* MLXNN */; };
+		4B71A64B2FDFFE9000DD9EA5 /* MLXEmbeddersTokenizers in Frameworks */ = {isa = PBXBuildFile; productRef = 4B71A64A2FDFFE9000DD9EA5 /* MLXEmbeddersTokenizers */; };
+		4B71A64D2FDFFE9000DD9EA5 /* MLXLMTokenizers in Frameworks */ = {isa = PBXBuildFile; productRef = 4B71A64C2FDFFE9000DD9EA5 /* MLXLMTokenizers */; };
+		4BEB2A5A2FE027AB00483CC8 /* MLXFFT in Frameworks */ = {isa = PBXBuildFile; productRef = 4BEB2A592FE027AB00483CC8 /* MLXFFT */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4B71A5FF2FDFF7D800DD9EA5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4BB6D19C2FA31C0F0054386C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4B71A5F92FDFF7D800DD9EA5;
+			remoteInfo = MyKeybord;
+		};
+		4BB6D1B22FA31C110054386C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4BB6D19C2FA31C0F0054386C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4BB6D1A32FA31C0F0054386C;
+			remoteInfo = KeybordUI;
+		};
+		4BB6D1BC2FA31C110054386C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4BB6D19C2FA31C0F0054386C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4BB6D1A32FA31C0F0054386C;
+			remoteInfo = KeybordUI;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4B71A6062FDFF7D800DD9EA5 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				4B71A6012FDFF7D800DD9EA5 /* MyKeybord.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		4B71A5FA2FDFF7D800DD9EA5 /* MyKeybord.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MyKeybord.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		4BB6D1A42FA31C0F0054386C /* KeybordUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KeybordUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4BB6D1B12FA31C110054386C /* KeybordUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KeybordUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4BB6D1BB2FA31C110054386C /* KeybordUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KeybordUIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		4B71A6412FDFF8A300DD9EA5 /* Exceptions for "MyKeybord" folder in "MyKeybord" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+				"My models/qwen_fr_4bit/chat_template.jinja",
+				"My models/qwen_fr_4bit/config.json",
+				"My models/qwen_fr_4bit/generation_config.json",
+				"My models/qwen_fr_4bit/model.safetensors",
+				"My models/qwen_fr_4bit/model.safetensors.index.json",
+				"My models/qwen_fr_4bit/README.md",
+				"My models/qwen_fr_4bit/tokenizer_config.json",
+				"My models/qwen_fr_4bit/tokenizer.json",
+				"My models/qwen_zh_4bit/chat_template.jinja",
+				"My models/qwen_zh_4bit/config.json",
+				"My models/qwen_zh_4bit/generation_config.json",
+				"My models/qwen_zh_4bit/model.safetensors",
+				"My models/qwen_zh_4bit/model.safetensors.index.json",
+				"My models/qwen_zh_4bit/README.md",
+				"My models/qwen_zh_4bit/tokenizer_config.json",
+				"My models/qwen_zh_4bit/tokenizer.json",
+				"My models/Qwen3-1.7B/.mdl",
+				"My models/Qwen3-1.7B/.msc",
+				"My models/Qwen3-1.7B/.mv",
+				"My models/Qwen3-1.7B/config.json",
+				"My models/Qwen3-1.7B/configuration.json",
+				"My models/Qwen3-1.7B/generation_config.json",
+				"My models/Qwen3-1.7B/LICENSE",
+				"My models/Qwen3-1.7B/merges.txt",
+				"My models/Qwen3-1.7B/model-00001-of-00002.safetensors",
+				"My models/Qwen3-1.7B/model-00002-of-00002.safetensors",
+				"My models/Qwen3-1.7B/model.safetensors.index.json",
+				"My models/Qwen3-1.7B/README.md",
+				"My models/Qwen3-1.7B/tokenizer_config.json",
+				"My models/Qwen3-1.7B/tokenizer.json",
+				"My models/Qwen3-1.7B/vocab.json",
+				"My models/Qwen3Model/.mdl",
+				"My models/Qwen3Model/.msc",
+				"My models/Qwen3Model/.mv",
+				"My models/Qwen3Model/config.json",
+				"My models/Qwen3Model/configuration.json",
+				"My models/Qwen3Model/generation_config.json",
+				"My models/Qwen3Model/LICENSE",
+				"My models/Qwen3Model/merges.txt",
+				"My models/Qwen3Model/model-00001-of-00002.safetensors",
+				"My models/Qwen3Model/model-00002-of-00002.safetensors",
+				"My models/Qwen3Model/model.safetensors.index.json",
+				"My models/Qwen3Model/README.md",
+				"My models/Qwen3Model/tokenizer_config.json",
+				"My models/Qwen3Model/tokenizer.json",
+			);
+			target = 4B71A5F92FDFF7D800DD9EA5 /* MyKeybord */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		4B71A5FB2FDFF7D800DD9EA5 /* MyKeybord */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				4B71A6412FDFF8A300DD9EA5 /* Exceptions for "MyKeybord" folder in "MyKeybord" target */,
+			);
+			path = MyKeybord;
+			sourceTree = "<group>";
+		};
+		4BB6D1A62FA31C0F0054386C /* KeybordUI */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = KeybordUI;
+			sourceTree = "<group>";
+		};
+		4BB6D1B42FA31C110054386C /* KeybordUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = KeybordUITests;
+			sourceTree = "<group>";
+		};
+		4BB6D1BE2FA31C110054386C /* KeybordUIUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = KeybordUIUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4B71A5F72FDFF7D800DD9EA5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B0C35902FE02EC400495C8F /* MLXLLM in Frameworks */,
+				4BEB2A5A2FE027AB00483CC8 /* MLXFFT in Frameworks */,
+				4B71A6482FDFFDC900DD9EA5 /* MLXNN in Frameworks */,
+				4B71A64B2FDFFE9000DD9EA5 /* MLXEmbeddersTokenizers in Frameworks */,
+				4B71A6462FDFFDC900DD9EA5 /* MLX in Frameworks */,
+				4B71A64D2FDFFE9000DD9EA5 /* MLXLMTokenizers in Frameworks */,
+				4B0C35922FE02EC400495C8F /* MLXLMCommon in Frameworks */,
+				4B0C35942FE137AD00495C8F /* MLXHuggingFace in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4BB6D1A12FA31C0F0054386C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4BB6D1AE2FA31C110054386C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4BB6D1B82FA31C110054386C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4B71A6442FDFFDC900DD9EA5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4BB6D19B2FA31C0F0054386C = {
+			isa = PBXGroup;
+			children = (
+				4BB6D1A62FA31C0F0054386C /* KeybordUI */,
+				4BB6D1B42FA31C110054386C /* KeybordUITests */,
+				4BB6D1BE2FA31C110054386C /* KeybordUIUITests */,
+				4B71A5FB2FDFF7D800DD9EA5 /* MyKeybord */,
+				4BB6D1A52FA31C0F0054386C /* Products */,
+				4B71A6442FDFFDC900DD9EA5 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4BB6D1A52FA31C0F0054386C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4BB6D1A42FA31C0F0054386C /* KeybordUI.app */,
+				4BB6D1B12FA31C110054386C /* KeybordUITests.xctest */,
+				4BB6D1BB2FA31C110054386C /* KeybordUIUITests.xctest */,
+				4B71A5FA2FDFF7D800DD9EA5 /* MyKeybord.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4B71A5F92FDFF7D800DD9EA5 /* MyKeybord */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4B71A6032FDFF7D800DD9EA5 /* Build configuration list for PBXNativeTarget "MyKeybord" */;
+			buildPhases = (
+				4B71A5F62FDFF7D800DD9EA5 /* Sources */,
+				4B71A5F72FDFF7D800DD9EA5 /* Frameworks */,
+				4B71A5F82FDFF7D800DD9EA5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				4B71A5FB2FDFF7D800DD9EA5 /* MyKeybord */,
+			);
+			name = MyKeybord;
+			packageProductDependencies = (
+				4B71A6452FDFFDC900DD9EA5 /* MLX */,
+				4B71A6472FDFFDC900DD9EA5 /* MLXNN */,
+				4B71A64A2FDFFE9000DD9EA5 /* MLXEmbeddersTokenizers */,
+				4B71A64C2FDFFE9000DD9EA5 /* MLXLMTokenizers */,
+				4BEB2A592FE027AB00483CC8 /* MLXFFT */,
+				4B0C358F2FE02EC400495C8F /* MLXLLM */,
+				4B0C35912FE02EC400495C8F /* MLXLMCommon */,
+				4B0C35932FE137AD00495C8F /* MLXHuggingFace */,
+			);
+			productName = MyKeybord;
+			productReference = 4B71A5FA2FDFF7D800DD9EA5 /* MyKeybord.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		4BB6D1A32FA31C0F0054386C /* KeybordUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4BB6D1C52FA31C110054386C /* Build configuration list for PBXNativeTarget "KeybordUI" */;
+			buildPhases = (
+				4BB6D1A02FA31C0F0054386C /* Sources */,
+				4BB6D1A12FA31C0F0054386C /* Frameworks */,
+				4BB6D1A22FA31C0F0054386C /* Resources */,
+				4B71A6062FDFF7D800DD9EA5 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4B71A6002FDFF7D800DD9EA5 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				4BB6D1A62FA31C0F0054386C /* KeybordUI */,
+			);
+			name = KeybordUI;
+			packageProductDependencies = (
+			);
+			productName = KeybordUI;
+			productReference = 4BB6D1A42FA31C0F0054386C /* KeybordUI.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4BB6D1B02FA31C110054386C /* KeybordUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4BB6D1C82FA31C110054386C /* Build configuration list for PBXNativeTarget "KeybordUITests" */;
+			buildPhases = (
+				4BB6D1AD2FA31C110054386C /* Sources */,
+				4BB6D1AE2FA31C110054386C /* Frameworks */,
+				4BB6D1AF2FA31C110054386C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4BB6D1B32FA31C110054386C /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				4BB6D1B42FA31C110054386C /* KeybordUITests */,
+			);
+			name = KeybordUITests;
+			packageProductDependencies = (
+			);
+			productName = KeybordUITests;
+			productReference = 4BB6D1B12FA31C110054386C /* KeybordUITests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4BB6D1BA2FA31C110054386C /* KeybordUIUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4BB6D1CB2FA31C110054386C /* Build configuration list for PBXNativeTarget "KeybordUIUITests" */;
+			buildPhases = (
+				4BB6D1B72FA31C110054386C /* Sources */,
+				4BB6D1B82FA31C110054386C /* Frameworks */,
+				4BB6D1B92FA31C110054386C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4BB6D1BD2FA31C110054386C /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				4BB6D1BE2FA31C110054386C /* KeybordUIUITests */,
+			);
+			name = KeybordUIUITests;
+			packageProductDependencies = (
+			);
+			productName = KeybordUIUITests;
+			productReference = 4BB6D1BB2FA31C110054386C /* KeybordUIUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4BB6D19C2FA31C0F0054386C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2640;
+				LastUpgradeCheck = 2640;
+				TargetAttributes = {
+					4B71A5F92FDFF7D800DD9EA5 = {
+						CreatedOnToolsVersion = 26.4.1;
+					};
+					4BB6D1A32FA31C0F0054386C = {
+						CreatedOnToolsVersion = 26.4.1;
+					};
+					4BB6D1B02FA31C110054386C = {
+						CreatedOnToolsVersion = 26.4.1;
+						TestTargetID = 4BB6D1A32FA31C0F0054386C;
+					};
+					4BB6D1BA2FA31C110054386C = {
+						CreatedOnToolsVersion = 26.4.1;
+						TestTargetID = 4BB6D1A32FA31C0F0054386C;
+					};
+				};
+			};
+			buildConfigurationList = 4BB6D19F2FA31C0F0054386C /* Build configuration list for PBXProject "KeybordUI" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4BB6D19B2FA31C0F0054386C;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				4B71A6492FDFFE7900DD9EA5 /* XCRemoteSwiftPackageReference "swift-tokenizers-mlx" */,
+				4B0478DA2FE02A56000C9769 /* XCRemoteSwiftPackageReference "mlx-swift" */,
+				4B0478DB2FE02A79000C9769 /* XCRemoteSwiftPackageReference "mlx-swift-lm" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 4BB6D1A52FA31C0F0054386C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4BB6D1A32FA31C0F0054386C /* KeybordUI */,
+				4BB6D1B02FA31C110054386C /* KeybordUITests */,
+				4BB6D1BA2FA31C110054386C /* KeybordUIUITests */,
+				4B71A5F92FDFF7D800DD9EA5 /* MyKeybord */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4B71A5F82FDFF7D800DD9EA5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4BB6D1A22FA31C0F0054386C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4BB6D1AF2FA31C110054386C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4BB6D1B92FA31C110054386C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4B71A5F62FDFF7D800DD9EA5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4BB6D1A02FA31C0F0054386C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4BB6D1AD2FA31C110054386C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4BB6D1B72FA31C110054386C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4B71A6002FDFF7D800DD9EA5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4B71A5F92FDFF7D800DD9EA5 /* MyKeybord */;
+			targetProxy = 4B71A5FF2FDFF7D800DD9EA5 /* PBXContainerItemProxy */;
+		};
+		4BB6D1B32FA31C110054386C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4BB6D1A32FA31C0F0054386C /* KeybordUI */;
+			targetProxy = 4BB6D1B22FA31C110054386C /* PBXContainerItemProxy */;
+		};
+		4BB6D1BD2FA31C110054386C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4BB6D1A32FA31C0F0054386C /* KeybordUI */;
+			targetProxy = 4BB6D1BC2FA31C110054386C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		4B71A6042FDFF7D800DD9EA5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XS69565T6Q;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MyKeybord/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MyKeybord;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Nour.KeybordUI.MyKeybord;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4B71A6052FDFF7D800DD9EA5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XS69565T6Q;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MyKeybord/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MyKeybord;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Nour.KeybordUI.MyKeybord;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4BB6D1C32FA31C110054386C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4BB6D1C42FA31C110054386C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4BB6D1C62FA31C110054386C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XS69565T6Q;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Nour.KeybordUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4BB6D1C72FA31C110054386C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XS69565T6Q;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Nour.KeybordUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4BB6D1C92FA31C110054386C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Nour.KeybordUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KeybordUI.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/KeybordUI";
+			};
+			name = Debug;
+		};
+		4BB6D1CA2FA31C110054386C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Nour.KeybordUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KeybordUI.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/KeybordUI";
+			};
+			name = Release;
+		};
+		4BB6D1CC2FA31C110054386C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Nour.KeybordUIUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = KeybordUI;
+			};
+			name = Debug;
+		};
+		4BB6D1CD2FA31C110054386C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Nour.KeybordUIUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = KeybordUI;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4B71A6032FDFF7D800DD9EA5 /* Build configuration list for PBXNativeTarget "MyKeybord" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B71A6042FDFF7D800DD9EA5 /* Debug */,
+				4B71A6052FDFF7D800DD9EA5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4BB6D19F2FA31C0F0054386C /* Build configuration list for PBXProject "KeybordUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4BB6D1C32FA31C110054386C /* Debug */,
+				4BB6D1C42FA31C110054386C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4BB6D1C52FA31C110054386C /* Build configuration list for PBXNativeTarget "KeybordUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4BB6D1C62FA31C110054386C /* Debug */,
+				4BB6D1C72FA31C110054386C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4BB6D1C82FA31C110054386C /* Build configuration list for PBXNativeTarget "KeybordUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4BB6D1C92FA31C110054386C /* Debug */,
+				4BB6D1CA2FA31C110054386C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4BB6D1CB2FA31C110054386C /* Build configuration list for PBXNativeTarget "KeybordUIUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4BB6D1CC2FA31C110054386C /* Debug */,
+				4BB6D1CD2FA31C110054386C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4B0478DA2FE02A56000C9769 /* XCRemoteSwiftPackageReference "mlx-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ml-explore/mlx-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.31.4;
+			};
+		};
+		4B0478DB2FE02A79000C9769 /* XCRemoteSwiftPackageReference "mlx-swift-lm" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ml-explore/mlx-swift-lm.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.31.3;
+			};
+		};
+		4B71A6492FDFFE7900DD9EA5 /* XCRemoteSwiftPackageReference "swift-tokenizers-mlx" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/DePasqualeOrg/swift-tokenizers-mlx/";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.3.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4B0C358F2FE02EC400495C8F /* MLXLLM */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4B0478DB2FE02A79000C9769 /* XCRemoteSwiftPackageReference "mlx-swift-lm" */;
+			productName = MLXLLM;
+		};
+		4B0C35912FE02EC400495C8F /* MLXLMCommon */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4B0478DB2FE02A79000C9769 /* XCRemoteSwiftPackageReference "mlx-swift-lm" */;
+			productName = MLXLMCommon;
+		};
+		4B0C35932FE137AD00495C8F /* MLXHuggingFace */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4B0478DB2FE02A79000C9769 /* XCRemoteSwiftPackageReference "mlx-swift-lm" */;
+			productName = MLXHuggingFace;
+		};
+		4B71A6452FDFFDC900DD9EA5 /* MLX */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = MLX;
+		};
+		4B71A6472FDFFDC900DD9EA5 /* MLXNN */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = MLXNN;
+		};
+		4B71A64A2FDFFE9000DD9EA5 /* MLXEmbeddersTokenizers */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4B71A6492FDFFE7900DD9EA5 /* XCRemoteSwiftPackageReference "swift-tokenizers-mlx" */;
+			productName = MLXEmbeddersTokenizers;
+		};
+		4B71A64C2FDFFE9000DD9EA5 /* MLXLMTokenizers */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4B71A6492FDFFE7900DD9EA5 /* XCRemoteSwiftPackageReference "swift-tokenizers-mlx" */;
+			productName = MLXLMTokenizers;
+		};
+		4BEB2A592FE027AB00483CC8 /* MLXFFT */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = MLXFFT;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 4BB6D19C2FA31C0F0054386C /* Project object */;
+}
